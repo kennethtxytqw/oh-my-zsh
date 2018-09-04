@@ -74,7 +74,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -100,3 +100,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias ipyspark="PYSPARK_DRIVER_PYTHON=ipython pyspark --conf spark.executor.memory=2g --conf spark.executor.cores=2 --conf spark.executor.instances=5 --conf spark.dynamicAllocation.enabled=false"
 alias jupyspark="PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser' pyspark --conf spark.executor.memory=2g --conf spark.executor.cores=2 --conf spark.executor.instances=4 --conf spark.dynamicAllocation.enabled=false"
+alias hls="hadoop fs -ls"
+alias hlsh="hadoop fs -ls -h"
+alias hdu="hadoop fs -du -h"
+alias hdus="hadoop fs -du -h -s"
