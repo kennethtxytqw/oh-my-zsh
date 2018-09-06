@@ -1,9 +1,11 @@
-<p align="center">
-  <img src="https://s3.amazonaws.com/ohmyzsh/oh-my-zsh-logo.png" alt="Oh My Zsh">
-</p>
-
 Oh My Zsh is an open source, community-driven framework for managing your [zsh](https://www.zsh.org/) configuration.
 But I have forked it out to customise for myself.
+
+## Changes I have made
+
+* change the default theme to "avit"
+* install and add a few default plugins
+* add a few aliases for Hadoop and PySpark
 
 Sounds boring. Let's try again.
 

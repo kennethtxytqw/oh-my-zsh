@@ -92,6 +92,12 @@ main() {
     fi
   fi
 
+  echo 'Installing plugin: zsh-syntax-highlighting'
+  git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
+  echo 'Installing plugin: zsh-autosuggestions'
+  git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+
   printf "${GREEN}"
   echo '         __                                     __   '
   echo '  ____  / /_     ____ ___  __  __   ____  _____/ /_  '
@@ -100,7 +106,7 @@ main() {
   echo '\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/  '
   echo '                        /____/                       ....is now installed!'
   echo ''
-  echo ''
+  echo 'This is a forked version produced by Wan Wenli (swwl1992)'
   echo 'Please look over the ~/.zshrc file to select plugins, themes, and options.'
   echo ''
   echo 'p.s. Follow us at https://twitter.com/ohmyzsh.'

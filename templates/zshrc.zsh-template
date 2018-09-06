@@ -65,6 +65,9 @@ ZSH_THEME="avit"
 plugins=(
   git
   history-substring-search
+  zsh-navigation-tools
+  zsh-syntax-highlighting
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
