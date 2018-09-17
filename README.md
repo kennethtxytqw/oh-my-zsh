@@ -82,19 +82,21 @@ We'll admit it. Early in the Oh My Zsh world, we may have gotten a bit too theme
 
 #### Selecting a Theme
 
-_Robby's theme is the default one. It's not the fanciest one. It's not the simplest one. It's just the right one (for him)._
+Robby's theme is the default one.
+_But I have changed it to avit which looks more "server-friendly"._
+It's not the fanciest one. It's not the simplest one. It's just the right one (for him).
 
 Once you find a theme that you'd like to use, you will need to edit the `~/.zshrc` file. You'll see an environment variable (all caps) in there that looks like:
 
 ```shell
-ZSH_THEME="swwl1992"
+ZSH_THEME="avit"
 ```
 
 To use a different theme, simply change the value to match the name of your desired theme. For example:
 
 ```shell
 ZSH_THEME="agnoster" # (this is one of the fancy ones)
-# see https://github.com/swwl1992/oh-my-zsh/wiki/Themes#agnoster
+# see https://github.com/robbyrussell/oh-my-zsh/wiki/Themes#agnoster
 ```
 
 _Note: many themes require installing the [Powerline Fonts](https://github.com/powerline/fonts) in order to render properly._
@@ -116,7 +118,7 @@ And if you want to pick random theme from a list of your favorite themes:
 
 ```shell
 ZSH_THEME_RANDOM_CANDIDATES=(
-  "swwl1992"
+  "avit"
   "agnoster"
 )
 ```
@@ -224,7 +226,7 @@ We also need people to test out pull-requests. So take a look through [the open 
 
 ### Do NOT send us themes
 
-We have (more than) enough themes for the time being. Please add your theme to the [external themes](https://github.com/swwl1992/oh-my-zsh/wiki/External-themes) wiki page.
+We have (more than) enough themes for the time being. Please add your theme to the [external themes](https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes) wiki page.
 
 ## Contributors
 
