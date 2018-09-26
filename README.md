@@ -1,15 +1,16 @@
 Oh My Zsh is an open source, community-driven framework for managing your [zsh](https://www.zsh.org/) configuration.
-But I have forked it out to customise for myself.
+But I have forked it out to customize for myself, as well as my servers.
 
 ## Changes I have made
 
-* change the default theme to "avit"
-* install and add a few default plugins
-* add a few aliases for Hadoop and PySpark
+* Change the default theme to "avit"
+* Install and add a few default plugins
+* Add a few aliases for Hadoop and PySpark
 
-Sounds boring. Let's try again.
+Still sounds boring. Let's try again.
 
 __Oh My Zsh will not make you a 10x developer...but you might feel like one.__
+With my customizations, you can get even closer.
 
 Once installed, your terminal shell will become the talk of the town _or your money back!_ With each keystroke in your command prompt, you'll take advantage of the hundreds of powerful plugins and beautiful themes. Strangers will come up to you in cafés and ask you, _"that is amazing! are you some sort of genius?"_
 
@@ -48,7 +49,7 @@ sh -c "$(wget https://raw.githubusercontent.com/swwl1992/oh-my-zsh/master/tools/
 
 ### Plugins
 
-Oh My Zsh comes with a shitload of plugins to take advantage of. You can take a look in the [plugins](https://github.com/swwl1992/oh-my-zsh/tree/master/plugins) directory and/or the [wiki](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins) to see what's currently available.
+Oh My Zsh comes with a shitload of plugins to take advantage of. You can take a look in the [plugins](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins) directory and/or the [wiki](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins) to see what's currently available.
 
 #### Enabling Plugins
 
@@ -78,13 +79,13 @@ Most plugins (should! we're working on this) include a __README__, which documen
 
 ### Themes
 
-We'll admit it. Early in the Oh My Zsh world, we may have gotten a bit too theme happy. We have over one hundred themes now bundled. Most of them have [screenshots](https://wiki.github.com/swwl1992/oh-my-zsh/themes) on the wiki. Check them out!
+We'll admit it. Early in the Oh My Zsh world, we may have gotten a bit too theme happy. We have over one hundred themes now bundled. Most of them have [screenshots](https://wiki.github.com/robbyrussell/oh-my-zsh/themes) on the wiki. Check them out!
 
 #### Selecting a Theme
 
 Robby's theme is the default one.
 _But I have changed it to avit which looks more "server-friendly"._
-It's not the fanciest one. It's not the simplest one. It's just the right one (for him).
+So again it is not the fanciest one, nor the simplest one.
 
 Once you find a theme that you'd like to use, you will need to edit the `~/.zshrc` file. You'll see an environment variable (all caps) in there that looks like:
 
@@ -105,7 +106,7 @@ Open up a new terminal window and your prompt should look something like this:
 
 ![Agnoster theme](https://cloud.githubusercontent.com/assets/2618447/6316862/70f58fb6-ba03-11e4-82c9-c083bf9a6574.png)
 
-In case you did not find a suitable theme for your needs, please have a look at the wiki for [more of them](https://github.com/swwl1992/oh-my-zsh/wiki/External-themes).
+In case you did not find a suitable theme for your needs, please have a look at the wiki for [more of them](https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes).
 
 If you're feeling feisty, you can let the computer select one randomly for you each time you open a new terminal window.
 
