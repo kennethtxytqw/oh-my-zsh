@@ -64,6 +64,7 @@ ZSH_THEME="avit"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  docker
   history-substring-search
   zsh-navigation-tools
   zsh-syntax-highlighting
@@ -108,5 +109,6 @@ alias ipyspark="PYSPARK_DRIVER_PYTHON=ipython pyspark $SPARK_DEFAULT_CONF"
 alias jupyspark="PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser' pyspark $SPARK_DEFAULT_CONF"
 alias hls="hadoop fs -ls"
 alias hlsh="hadoop fs -ls -h"
+alias hcp="hadoop fs -cp"
 alias hdu="hadoop fs -du -h"
 alias hdus="hadoop fs -du -h -s"
