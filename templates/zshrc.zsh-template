@@ -93,9 +93,6 @@ export LANG=en_US.UTF-8
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-# Spark configurations
-SPARK_DEFAULT_CONF="--conf spark.executor.memory=2g --conf spark.executor.cores=2 --conf spark.executor.instances=5 --conf spark.dynamicAllocation.enabled=false"
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -104,11 +101,3 @@ SPARK_DEFAULT_CONF="--conf spark.executor.memory=2g --conf spark.executor.cores=
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-alias ipyspark="PYSPARK_DRIVER_PYTHON=ipython pyspark $SPARK_DEFAULT_CONF"
-alias jupyspark="PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_DRIVER_PYTHON_OPTS='notebook --no-browser' pyspark $SPARK_DEFAULT_CONF"
-alias hls="hadoop fs -ls"
-alias hlsh="hadoop fs -ls -h"
-alias hcp="hadoop fs -cp"
-alias hdu="hadoop fs -du -h"
-alias hdus="hadoop fs -du -h -s"
