@@ -78,6 +78,12 @@ main() {
   " ~/.zshrc > ~/.zshrc-omztemp
   mv -f ~/.zshrc-omztemp ~/.zshrc
 
+  echo 'Installing plugin: zsh-syntax-highlighting'
+  git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
+  echo 'Installing plugin: zsh-autosuggestions'
+  git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+
   # If this user's login shell is not already "zsh", attempt to switch.
   TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
   if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
@@ -92,12 +98,6 @@ main() {
     fi
   fi
 
-  echo 'Installing plugin: zsh-syntax-highlighting'
-  git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-
-  echo 'Installing plugin: zsh-autosuggestions'
-  git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-
   printf "${GREEN}"
   echo '         __                                     __   '
   echo '  ____  / /_     ____ ___  __  __   ____  _____/ /_  '
@@ -107,11 +107,8 @@ main() {
   echo '                        /____/                       ....is now installed!'
   echo ''
   echo 'This is a forked version produced by Wan Wenli (swwl1992)'
+  echo ''
   echo 'Please look over the ~/.zshrc file to select plugins, themes, and options.'
-  echo ''
-  echo 'p.s. Follow us at https://twitter.com/ohmyzsh.'
-  echo ''
-  echo 'p.p.s. Get stickers and t-shirts at https://shop.planetargon.com.'
   echo ''
   printf "${NORMAL}"
   env zsh -l
