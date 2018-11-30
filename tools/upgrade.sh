@@ -22,7 +22,22 @@ fi
 
 printf "${BLUE}%s${NORMAL}\n" "Updating Oh My Zsh"
 cd "$ZSH"
-if git pull --rebase --stat origin master
+
+function git-pull {
+  local ret=0
+  if [[ -z $(git status -s) ]]; then
+    git pull --rebase --stat origin master
+    ret=$?
+  else
+    git stash
+    git pull --rebase --stat origin master
+    ret=$?
+    git stash pop
+  fi
+  return ${ret}
+}
+
+if git-pull
 then
   printf '%s' "$GREEN"
   printf '%s\n' '         __                                     __   '
