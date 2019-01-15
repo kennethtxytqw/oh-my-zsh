@@ -23,7 +23,7 @@ fi
 printf "${BLUE}%s${NORMAL}\n" "Updating Oh My Zsh"
 cd "$ZSH"
 
-function git-pull {
+function git_pull() {
   local ret=0
   if [[ -z $(git status -s) ]]; then
     git pull --rebase --stat origin master
@@ -37,7 +37,7 @@ function git-pull {
   return ${ret}
 }
 
-if git-pull
+if git_pull
 then
   printf '%s' "$GREEN"
   printf '%s\n' '         __                                     __   '
