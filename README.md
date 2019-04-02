@@ -1,13 +1,14 @@
 Oh My Zsh is an open source, community-driven framework for managing your [zsh](https://www.zsh.org/) configuration.
-But I have forked it out to customize for myself, as well as my servers.
+But I have forked it out to customize for myself.
 
 ## Changes I have made
 
 * Change the default theme to "avit"
-* Install and add a few default plugins
+* Try to stash and pop your diff from the stash if any local change is found
+* Install and add a few default plugins, including docker, history
 * Add a few aliases for Hadoop and PySpark
 
-Still sounds boring. Let's try again.
+Still sounds boring? Let's try again.
 
 __Oh My Zsh will not make you a 10x developer...but you might feel like one.__
 With my customizations, you can get even closer.
