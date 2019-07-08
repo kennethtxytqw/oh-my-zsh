@@ -44,6 +44,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/swwl1992/oh-my-zsh/master/
 
 ```shell
 sh -c "$(wget https://raw.githubusercontent.com/swwl1992/oh-my-zsh/master/tools/install.sh -O -)"
+```
 
 #### Manual inspection
 
@@ -54,7 +55,6 @@ then running it:
 ```shell
 curl -Lo install.sh https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
 sh install.sh
->>>>>>> d69bad8eb4157e5fd5c1a4ce98f93cf522477a8c
 ```
 
 ## Using Oh My Zsh
@@ -190,7 +190,6 @@ For example:
 
 ```shell
 REPO=apjanke/oh-my-zsh BRANCH=edge sh install.sh
->>>>>>> d69bad8eb4157e5fd5c1a4ce98f93cf522477a8c
 ```
 
 #### Manual Installation
