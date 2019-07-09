@@ -70,11 +70,13 @@ ZSH_THEME="avit"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  docker
   history-substring-search
   zsh-navigation-tools
   zsh-syntax-highlighting
   zsh-autosuggestions
+  docker
+  kubectl
+  terraform
 )
 
 source $ZSH/oh-my-zsh.sh
