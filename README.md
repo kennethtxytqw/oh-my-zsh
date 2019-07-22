@@ -166,7 +166,7 @@ flag `--unattended` to the `install.sh` script. This will have the effect of not
 the default shell, and also won't run `zsh` when the installation has finished.
 
 ```shell
-export ZSH="$HOME/.dotfiles/oh-my-zsh"; sh -c "$(curl -fsSL https://raw.githubusercontent.com/wanwenli/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/wanwenli/oh-my-zsh/master/tools/install.sh)" "" --unattended
 ```
 
 #### Installing from a forked repository
