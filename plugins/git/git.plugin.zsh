@@ -91,6 +91,7 @@ compdef _git gdv=git-diff
 alias gf='git fetch'
 alias gfa='git fetch --all --prune'
 alias gfo='git fetch origin'
+alias gfom='git fetch origin master'
 
 alias gfg='git ls-files | grep'
 
